@@ -1,6 +1,6 @@
 Type: Package
 Package: saros.utils
-Title: Utilities for the Semi-Automatic Reporting of Ordinary Surveys (saros) Packages
+Title: Utility Tools in the Semi-Automatic Reporting of Ordinary Surveys (Saros)
 Version: 0.1
 Authors@R: c(
     person(given = "Stephan", 
@@ -14,8 +14,10 @@ Authors@R: c(
            role = c("fnd"))
   )
 Maintainer: Stephan Daus <stephus.daus@gmail.com>
-Description: Project setup and publication tools with access restrictions for 'mesos'-reports
-    on a 'Quarto' Website. Component of the saros-packageverse.
+Description: Non-core tools in the saros package project for quick project setup, 
+    access restrictions to Quarto Website reports, and advanced variable
+    label tools. See 'saros' (<https://CRAN.R-project.org/package=saros>) 
+    for the main umbrella package.
 Note: Free to use for non-Norwegian institutions, otherwise see LICENSE.
 License: MIT + file LICENSE
 URL: https://nifu-no.github.io/saros.utils/, https://github.com/NIFU-NO/saros.utils
