@@ -31,7 +31,6 @@ Imports:
     rvest,
     tidyr,
     tidyselect,
-    saros.base,
     vctrs,
     dplyr,
     glue,
