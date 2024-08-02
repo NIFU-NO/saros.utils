@@ -26,3 +26,4 @@ String. Modified folder name.
 \description{
 Handle Naming Conventions
 }
+\keyword{internal}

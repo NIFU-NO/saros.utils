@@ -41,3 +41,4 @@ are not rendered in a Quarto (Website) project. This function, which can
 be called within a post-script (see example below), will render only these
 after the ordinary rendering of the project, and copied to the _site folder.
 }
+\keyword{internal}
