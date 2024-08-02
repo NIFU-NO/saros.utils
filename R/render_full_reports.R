@@ -16,6 +16,7 @@
 #' @param warn_on_file_error If TRUE, will collect warnings if a file fails to render or be copied. If FALSE (default), will stop the rendering process.
 #' @param ... Additional arguments passed to `quarto::render()`
 #' @return Returns invisibly a character vector of processed files.
+#' @keywords internal
 #'
 render_full_reports <- function(
     files = NULL,

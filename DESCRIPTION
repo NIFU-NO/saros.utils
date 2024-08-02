@@ -1,6 +1,6 @@
 Type: Package
 Package: saros.utils
-Title: Non-core utilities for the Semi-Automatic Reporting of Ordinary Surveys Packages
+Title: Utilities for the Semi-Automatic Reporting of Ordinary Surveys (saros) Packages
 Version: 0.1
 Authors@R: c(
     person(given = "Stephan", 
@@ -14,12 +14,12 @@ Authors@R: c(
            role = c("fnd"))
   )
 Maintainer: Stephan Daus <stephus.daus@gmail.com>
-Description: Publication tools for password generation for 'mesos'-reports
-    on a 'Quarto' Website.
+Description: Project setup and publication tools with access restrictions for 'mesos'-reports
+    on a 'Quarto' Website. Component of the saros-packageverse.
 Note: Free to use for non-Norwegian institutions, otherwise see LICENSE.
 License: MIT + file LICENSE
-URL: https://nifu-no.github.io/saros/, https://github.com/NIFU-NO/saros 
-BugReports: https://github.com/NIFU-NO/saros/issues
+URL: https://nifu-no.github.io/saros.utils/, https://github.com/NIFU-NO/saros.utils
+BugReports: https://github.com/NIFU-NO/saros.utils/issues
 Depends:
     R (>= 4.2.0)
 Imports: 
@@ -31,7 +31,6 @@ Imports:
     rvest,
     tidyr,
     tidyselect,
-    saros.base,
     vctrs,
     dplyr,
     glue,

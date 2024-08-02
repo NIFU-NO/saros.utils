@@ -15,15 +15,10 @@ reference:
   contents:
   - initialize_saros_project
   - download_zip_to_folder
-- title: "Project startup tools - template creation functions"
-  desc: "For project templates (might be dropped in favour of 3rd party packages focusing on this)"
-  contents:
-  - generate_yaml_from_directory
-  - write_default_draft_report_args
 - title: "Project startup tools - underlying functions"
   desc: "For project templates (might be dropped in favour of 3rd party packages focusing on this)"
   contents:
-  - read_default_draft_report_args
+  - generate_yaml_from_directory
   - copy_folder_contents_to_dir
   - create_directory_structure
   - create_r_files

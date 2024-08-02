@@ -5,6 +5,7 @@
 #' @param word_separator String.
 #' @param replacement_list Character vector, named.
 #' @return String. Modified folder name.
+#' @keywords internal
 handle_naming_conventions <- function(name = "Journal manuscripts",
                                       case="asis",
                                       word_separator = NULL,
@@ -42,6 +43,7 @@ handle_naming_conventions <- function(name = "Journal manuscripts",
 #' @param parent_path String. The path to the parent directory.
 #' @param count_existing_folders Boolean. Whether to count existing folders for numbering.
 #' @return String. Appropriate numbering based on the maximum observed value.
+#' @keywords internal
 handle_max_observed <- function(parent_path = getwd(), count_existing_folders = FALSE) {
   if(count_existing_folders) {
     existing_folders <- list.dirs(parent_path, recursive = FALSE, full.names = FALSE)
@@ -68,6 +70,7 @@ handle_max_observed <- function(parent_path = getwd(), count_existing_folders = 
 #' @param max_folder_count_digits Integer. The fixed width of the counting.
 #'
 #' @return String
+#' @keywords internal
 handle_numbering_inheritance <- function(counter = 1,
                                          numbering_prefix = c("none", "max_global", "max_local"),
                                          max_folder_count_digits = 0,
