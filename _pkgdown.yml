@@ -38,7 +38,6 @@ reference:
   - col_to_binaries
   - combn_upto
   - recode_checkbox_sets
-  - subset_vector
   - omitted_recoder_df
 - title: "Convenience tools for working with datasets"
   desc: "Perhaps better suited in 3rd party packages, so might be moved later"
