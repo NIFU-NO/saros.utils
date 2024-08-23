@@ -46,7 +46,7 @@
     <div class="section level2">
     <h2 id="ref-usage">Usage<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">create_directory_structure</span><span class="op">(</span></span>
-<span>  path <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/getwd.html" class="external-link">getwd</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  <span class="va">path</span>,</span>
 <span>  structure_path <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/system.file.html" class="external-link">system.file</a></span><span class="op">(</span><span class="st">"templates"</span>, <span class="st">"_project_structure_en.yaml"</span>, package <span class="op">=</span></span>
 <span>    <span class="st">"saros.utils"</span><span class="op">)</span>,</span>
 <span>  numbering_prefix <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"none"</span>, <span class="st">"max_local"</span>, <span class="st">"max_global"</span><span class="op">)</span>,</span>
@@ -116,97 +116,97 @@
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">create_directory_structure</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/Call </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/Formalities </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/CVs </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/Collaboration and cooperation agreements </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/Application </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/Pre-analysis </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Application/For submission </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Budget </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Contracts and agreements </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Invoices, accounting and receipts </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Status reports </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Logo and graphical materials </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Internal meetings </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Internal meetings/Meeting agendas and invitations </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Internal meetings/Internal presentations </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Administration/Internal meetings/Minutes </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Overall planning </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Consent form </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Ethical-GDPR approval </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Survey questionnaires </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Staff </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Pupils </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Parents </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Researchers </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Leaders </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Teachers </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Principals </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Students </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Interview guides/Population </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Request of data from </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Literature review-design </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Intervention materials </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Randomizing participants </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Materials/Chapter overviews </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature/Topic has policy relevance </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature/Pure theory and framework </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature/Similar empirical studies </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature/Similar instruments and guides for data collection </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature/Relevant analytic methodology </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Literature/Unprocessed (remove from here) </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Population data </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Population data/Codebook </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Sampling frame </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Registry data </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Collected respondent lists </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Respondent list for survey system </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Downloaded response data </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Downloaded response data/Codebook </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Qualitative data </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Qualitative data/Interview recordings </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Qualitative data/Observational notes </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Text corpus </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/PDF-reports </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Prepared data </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Data/Prepared data/Codebooks </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Scripts </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Resources </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Draft generations </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Draft generations/main </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Draft generations/Reports </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Drafts in editing </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Drafts in editing/main </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Drafts in editing/Reports </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Completed drafts </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Completed drafts/main </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Saros_SSN/Completed drafts/Reports </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials) </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Cover letter &amp; response to reviewers </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Manuscript </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Analysis </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Figures for submission </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Tables for submission </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Appendix </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Publications/Paper1-Short title (author initials)/Online supplementary materials </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach/Research conference presentation </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach/Research conference poster </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach/Stakeholders and reference group </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach/Stakeholders' communication channels </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach/Practitioners and special interest channels </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Outreach/Public through mass media channels </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> /home/runner/work/saros.utils/saros.utils/docs/reference/Other </span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">create_directory_structure</span><span class="op">(</span>path <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/tempfile.html" class="external-link">tempdir</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/Call </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/Formalities </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/CVs </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/Collaboration and cooperation agreements </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/Application </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/Pre-analysis </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Application/For submission </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Budget </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Contracts and agreements </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Invoices, accounting and receipts </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Status reports </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Logo and graphical materials </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Internal meetings </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Internal meetings/Meeting agendas and invitations </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Internal meetings/Internal presentations </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Administration/Internal meetings/Minutes </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Overall planning </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Consent form </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Ethical-GDPR approval </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Survey questionnaires </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Staff </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Pupils </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Parents </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Researchers </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Leaders </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Teachers </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Principals </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Students </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Interview guides/Population </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Request of data from </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Literature review-design </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Intervention materials </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Randomizing participants </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Materials/Chapter overviews </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature/Topic has policy relevance </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature/Pure theory and framework </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature/Similar empirical studies </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature/Similar instruments and guides for data collection </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature/Relevant analytic methodology </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Literature/Unprocessed (remove from here) </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Population data </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Population data/Codebook </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Sampling frame </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Registry data </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Collected respondent lists </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Respondent list for survey system </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Downloaded response data </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Downloaded response data/Codebook </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Qualitative data </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Qualitative data/Interview recordings </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Qualitative data/Observational notes </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Text corpus </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/PDF-reports </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Prepared data </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Data/Prepared data/Codebooks </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Scripts </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Resources </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Draft generations </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Draft generations/main </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Draft generations/Reports </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Drafts in editing </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Drafts in editing/main </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Drafts in editing/Reports </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Completed drafts </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Completed drafts/main </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Saros_SSN/Completed drafts/Reports </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials) </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Cover letter &amp; response to reviewers </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Manuscript </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Analysis </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Figures for submission </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Tables for submission </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Appendix </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Publications/Paper1-Short title (author initials)/Online supplementary materials </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach/Research conference presentation </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach/Research conference poster </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach/Stakeholders and reference group </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach/Stakeholders' communication channels </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach/Practitioners and special interest channels </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Outreach/Public through mass media channels </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> /tmp/Rtmpvnm8Jw/Other </span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
