@@ -20,7 +20,7 @@
 #' @param r_add_folder_scope_as_README Flag. Whether to create README file in each folder with the folder_scope column cell in r_files_source_path. Defaults to FALSE.
 #' @param r_optionals Flag. Whether to add files marked as 1 (or TRUE) in the optional column. Defaults to TRUE.
 #'
-#' @return NULL
+#' @returns No return value, called for side effects
 #' @export
 #'
 #' @examples initialize_saros_project(path = tempdir())

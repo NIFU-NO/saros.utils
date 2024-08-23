@@ -17,6 +17,9 @@ generate_yaml_from_directory(
 
 \item{remove_prefix_numbers}{Boolean. Whether to remove numeric prefixes and any resulting leading non-alphanumeric characters from folder names. Defaults to FALSE.}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Generate YAML File from Directory Structure
 }

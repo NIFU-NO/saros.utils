@@ -4,7 +4,7 @@
 #' @param input_path String. The path to the directory whose structure needs to be captured.
 #' @param output_yaml_path String. The path where the YAML file will be saved.
 #' @param remove_prefix_numbers Boolean. Whether to remove numeric prefixes and any resulting leading non-alphanumeric characters from folder names. Defaults to FALSE.
-#' @return NULL
+#' @returns No return value, called for side effects
 #' @export
 #' @examples
 #' generate_yaml_from_directory(output_yaml_path = tempfile("_project_structure_en", fileext=".yaml"))

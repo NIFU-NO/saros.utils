@@ -8,7 +8,7 @@
 #' @param ignore_missing_emails Flag, defaults to FALSE. Whether usernames existing in password file but not email file will result in warnings.
 #' @param email_body,email_subject String, subject line and email body respectively. Supports glue syntax referring to columns found in the email data frame or password file.
 #' @param ... Dynamic dots forwarded to quarto::quarto_render
-#' @return Data.frame
+#' @returns Data.frame
 #' @export
 create_email_credentials <-
   function(email_data_frame,

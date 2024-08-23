@@ -4,7 +4,7 @@
 #' @param chart_dir Directory path to where the mscharts as docx files can be found.
 #' @param delete_mschart_files Flag. Whether to delete the mschart docx files after insertion. Defaults to FALSE.
 #'
-#' @return String, path to input file.
+#' @returns String, path to input file.
 #' @export
 #'
 replace_docx_imgs_with_mscharts <- function(main_file,
@@ -49,7 +49,7 @@ replace_docx_imgs_with_mscharts <- function(main_file,
 #' @param site_dir,site_mesos_dir,chart_dir,chart_mesos_dir String. Paths to the site (and mesos subfolder) with the docx files where the images are to be replaced, and paths to where to find the docx files with mscharts to be replaced with can be found.
 #' @param delete_mschart_files Flag. Whether to delete the mschart docx files after successful copying into the docx files. Defaults to FALSE.
 #'
-#' @return Nothing, side-effects only.
+#' @returns Nothing, side-effects only.
 #' @export
 post_render_docx_img_replacer <- function(site_dir = fs::path(Sys.getenv("QUARTO_PROJECT_OUTPUT_DIR"), "reports", "report"),
                                           site_mesos_dir = fs::path(site_dir, "mesos"),

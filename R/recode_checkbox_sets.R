@@ -21,7 +21,7 @@
 #'   Factor labels.
 #' @param convert_to_factor Flag. Whether to convert variables to factor (using `output_*_label` args) or leave as is.
 #' @param keep_tmp_var Whether to keep temporary variables for output_all_unchecked_value (mostly for debugging). Defaults to FALSE.
-#' @return Data frame/tibble.
+#' @returns Data frame/tibble.
 #' @importFrom rlang `:=`
 #' @export
 #'

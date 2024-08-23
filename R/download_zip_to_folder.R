@@ -11,7 +11,7 @@
 #'   not found. Alternatively, a string (path) can be provided.
 #'   Defaults to file.path(out_path, ".Rproj") if such exists. Set to NULL or FALSE to ignore.
 #' @param newSession Flag. Whether to open new project in a new RStudio session. Defaults to TRUE.
-#' @return Character vector of unzipped files.
+#' @returns Character vector of unzipped files.
 #' @export
 #' @importFrom fs dir_ls
 #' @importFrom zip unzip

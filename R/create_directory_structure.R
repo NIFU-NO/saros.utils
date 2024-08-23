@@ -4,7 +4,7 @@
 #' @param case String. One of c("asis", "sentence", "lower", "upper", "title", "snake").
 #' @param word_separator String.
 #' @param replacement_list Character vector, named.
-#' @return String. Modified folder name.
+#' @returns String. Modified folder name.
 #' @keywords internal
 handle_naming_conventions <- function(name = "Journal manuscripts",
                                       case="asis",
@@ -42,7 +42,7 @@ handle_naming_conventions <- function(name = "Journal manuscripts",
 #'
 #' @param parent_path String. The path to the parent directory.
 #' @param count_existing_folders Boolean. Whether to count existing folders for numbering.
-#' @return String. Appropriate numbering based on the maximum observed value.
+#' @returns String. Appropriate numbering based on the maximum observed value.
 #' @keywords internal
 handle_max_observed <- function(parent_path = getwd(), count_existing_folders = FALSE) {
   if(count_existing_folders) {
@@ -69,7 +69,7 @@ handle_max_observed <- function(parent_path = getwd(), count_existing_folders = 
 #' @param count_existing_folders Flag. Whether to consider existing folders when counting. Defaults to FALSE.
 #' @param max_folder_count_digits Integer. The fixed width of the counting.
 #'
-#' @return String
+#' @returns String
 #' @keywords internal
 handle_numbering_inheritance <- function(counter = 1,
                                          numbering_prefix = c("none", "max_global", "max_local"),
@@ -119,7 +119,7 @@ find_longest_list_length <- function(lst) {
 #' Create a Pre-defined Directory Hierarchy on Disk
 #'
 #' @inheritParams initialize_saros_project
-#' @return NULL
+#' @returns No return value, called for side effects
 #'
 #' @export
 #' @examples

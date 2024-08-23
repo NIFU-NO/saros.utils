@@ -8,7 +8,7 @@
 #' @param trim string, trim "both" sides (default), "left" or "right".
 #' @param overwrite Flag. Whether to remove label if it already exists.
 #'
-#' @return data, with variable labels replaced
+#' @returns data, with variable labels replaced
 #' @export
 replace_stata_labels <- function(data, df_new_labels,
                                  var_name_col = "name",

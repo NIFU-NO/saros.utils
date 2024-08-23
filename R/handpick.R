@@ -6,7 +6,7 @@
 #' @param to_clipboard Boolean. Defaults to FALSE. If TRUE, overwrites what you already have copied. Use with caution.
 #' @param bare Flag, defaults to FALSE. If TRUE, returns a tidyselect-style bare list of columns, without quotation marks.
 #'
-#' @return Character vector. Prints to console.
+#' @returns Character vector. Prints to console.
 #' @export
 #'
 #' @examples

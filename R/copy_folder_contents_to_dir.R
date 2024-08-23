@@ -4,7 +4,7 @@
 #' @param overwrite Flag. Defaults to FALSE.
 #' @param only_copy_folders Flag. Defaults to FALSE. If TRUE, only copies folders.
 #'
-#' @return NULL
+#' @returns No return value, called for side effects
 #' @export
 #'
 #' @examples

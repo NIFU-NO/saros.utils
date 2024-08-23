@@ -13,7 +13,7 @@
 #' @param not_administered What to replace not administered values with.
 #' @param all_missing What to replace values in rows with all missing with.
 #' @importFrom rlang set_names warn abort
-#' @return A data.frame (or vector, if input is vector and accept_vector=TRUE)
+#' @returns A data.frame (or vector, if input is vector and accept_vector=TRUE)
 #'   with recoded cells.
 #' @export
 #'
@@ -146,7 +146,7 @@ omitted_recoder_df <- function(df, accept_vector=FALSE, skipped=0L,
 #'
 #' @importFrom utils combn
 #' @importFrom rlang is_integer
-#' @return A data frame
+#' @returns A data frame
 #' @export
 #' @examples
 #' combn_upto()
@@ -196,7 +196,7 @@ trim_columns <- function(data, cols = c(".variable_label_prefix_dep", ".variable
 #'
 #'   Separator between old label name and new label part.
 #'
-#' @return Original data frame with the binary columns attached, containing new labels.
+#' @returns Original data frame with the binary columns attached, containing new labels.
 #' @export
 #'
 col_to_binaries <- function(data, col,

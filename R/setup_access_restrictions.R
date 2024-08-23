@@ -15,7 +15,7 @@
 #' @param password_input String, either "prompt" which asks the user for input. Alternatively, a number stored as string for a generated random password of said length: "8", "10", "12", "16"
 #' @param type Character vector. "netlify" will create _headers file used for Netlify. "apache" will create .htaccess and .htpasswd files used for general FTP-servers.
 #'
-#' @return String, the path to the newly created _headers-file or .htaccess files.
+#' @returns String, the path to the newly created _headers-file or .htaccess files.
 #' @export
 setup_access_restrictions <- function(remote_basepath = "/home/",
                                       local_basepath,

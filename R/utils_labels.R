@@ -2,7 +2,7 @@
 #'
 #' @param df Data frame
 #'
-#' @return A data frame
+#' @returns A data frame
 #' @export
 remove_special_chars_in_labels <-
   function(df) {

@@ -10,7 +10,7 @@
 #' @param new_var_sep When creating new variables, how to glue together variable group name prefix and numbering?
 #' @param stop_words Words to ignore in label when abbreviating label to name.
 #'
-#' @return Data with renamed variable names.
+#' @returns Data with renamed variable names.
 #' @export
 rename_by_labels <-
 	function(data,
@@ -61,7 +61,7 @@ rename_by_labels <-
 #'
 #' @param data Data frame
 #'
-#' @return Data.frame
+#' @returns Data.frame
 #' @export
 #'
 #' @examples

@@ -2,7 +2,7 @@
 #'
 #' @inheritParams initialize_saros_project
 #'
-#' @return NULL
+#' @returns No return value, called for side effects
 #' @export
 #'
 #' @examples create_r_files(r_files_out_path=tempdir())

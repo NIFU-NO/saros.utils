@@ -42,6 +42,9 @@ create_directory_structure(
 
 \item{count_existing_folders}{Boolean. Defaults to FALSE.}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Create a Pre-defined Directory Hierarchy on Disk
 }

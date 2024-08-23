@@ -7,7 +7,7 @@
 #' @param questions_question String, indicating column name in `questions` for the full question.
 #' with full stops changed to underscores, this will reverse them for connection. Rarely needed. Defaults to FALSE.
 #'
-#' @return Data returned with only variable labels modified.
+#' @returns Data returned with only variable labels modified.
 #' @export
 attach_qualtrics_labels <- function(data, questions, reverse_stata_replacement=FALSE,
                                     questions_var="qname", questions_question="question") {
@@ -54,7 +54,7 @@ attach_qualtrics_labels <- function(data, questions, reverse_stata_replacement=F
 #' @param replace_ascii_with_utf Flag. If TRUE, downloads a list from W3 used to convert html characters as ASCII to UTF8.
 #' @param questions Data frame with questions obtained from `qualtRics::survey_questions()`
 #'
-#' @return Identical data.frame as input, with only variable labels changed.
+#' @returns Identical data.frame as input, with only variable labels changed.
 #' @export
 #'
 sanitize_labels <- function(data,

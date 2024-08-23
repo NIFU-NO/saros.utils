@@ -59,6 +59,9 @@ initialize_saros_project(
 
 \item{create}{Boolean. Defaults to TRUE in initialize_saros_project(), FALSE in create_directory_structure().}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Can be used programatically from the console, or simply use the New Project Wizard.
 }
