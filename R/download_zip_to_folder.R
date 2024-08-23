@@ -25,7 +25,7 @@ download_zip_to_folder <-
   function(github_zip_url = "https://github.com/NIFU-NO/nifutemplates/archive/refs/heads/main.zip",
            zip_path = tempfile(fileext = ".zip"),
            files = NULL,
-           out_path = getwd(),
+           out_path,
            prompt = TRUE,
            overwrite = FALSE,
            open_project = FALSE,

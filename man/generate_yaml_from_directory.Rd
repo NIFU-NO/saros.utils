@@ -5,7 +5,7 @@
 \title{Generate YAML File from Directory Structure}
 \usage{
 generate_yaml_from_directory(
-  input_path = getwd(),
+  input_path,
   output_yaml_path = "_project_structure_en.yaml",
   remove_prefix_numbers = FALSE
 )
@@ -24,5 +24,6 @@ No return value, called for side effects
 Generate YAML File from Directory Structure
 }
 \examples{
-generate_yaml_from_directory(output_yaml_path = tempfile("_project_structure_en", fileext=".yaml"))
+generate_yaml_from_directory(input_path=tempdir(),
+   output_yaml_path = tempfile("_project_structure_en", fileext=".yaml"))
 }

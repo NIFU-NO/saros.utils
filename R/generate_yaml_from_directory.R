@@ -7,8 +7,9 @@
 #' @returns No return value, called for side effects
 #' @export
 #' @examples
-#' generate_yaml_from_directory(output_yaml_path = tempfile("_project_structure_en", fileext=".yaml"))
-generate_yaml_from_directory <- function(input_path = getwd(),
+#' generate_yaml_from_directory(input_path=tempdir(),
+#'    output_yaml_path = tempfile("_project_structure_en", fileext=".yaml"))
+generate_yaml_from_directory <- function(input_path,
                                          output_yaml_path = "_project_structure_en.yaml",
                                          remove_prefix_numbers = FALSE) {
   # Recursive function to traverse directory and build list
