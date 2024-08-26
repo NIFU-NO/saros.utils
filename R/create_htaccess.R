@@ -31,10 +31,10 @@ create_htaccess <-
 
         content <- paste0('AuthName "Saros-report access: ', folder_name,
                           '"
-AuthUserFile ', file.path(remote_basepath,
+AuthUserFile "', file.path(remote_basepath,
                           names(local_subfolders_sets)[i],
                           folder_name,
-                          '.htpasswd'), '
+                          '.htpasswd'), '"
 AuthType Basic
 Require valid-user
 AddHandler server-parsed .html')
