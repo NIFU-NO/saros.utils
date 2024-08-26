@@ -1,7 +1,7 @@
 Type: Package
 Package: saros.utils
 Title: Utilities for the Semi-Automatic Reporting of Ordinary Surveys (saros) Packages
-Version: 0.1
+Version: 0.1.1
 Authors@R: c(
     person(given = "Stephan", 
            family = "Daus", 
