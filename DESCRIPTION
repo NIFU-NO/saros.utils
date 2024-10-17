@@ -24,23 +24,18 @@ Depends:
     R (>= 4.2.0)
 Imports: 
     cli,
-    stringi,
-    clipr,
-    labelled,
-    officer,
-    rvest,
+    utils,
     tidyr,
     tidyselect,
     vctrs,
-    dplyr,
-    glue,
-	  utils,
-	  zip,
-	  yaml,
-    rstudioapi,
     rlang,
-    bcrypt,
-    fs
+    dplyr,
+    stringi,
+    fs,
+    rvest,
+    clipr,
+    labelled,
+    officer
 Suggests:
     covr,
     testthat (>= 3.0.0),
